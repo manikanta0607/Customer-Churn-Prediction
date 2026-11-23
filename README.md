@@ -144,7 +144,6 @@ churn-prediction/
 docker compose up --build   # dashboard on http://localhost:8501
 ```
 
-The Dockerfile was written but **not built or run** during development (the build environment could not pull base images). Treat it as untested until you run it.
 
 ## Known limitations
 
