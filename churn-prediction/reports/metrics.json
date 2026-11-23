@@ -1,0 +1,137 @@
+{
+  "trained_at_utc": "2026-11-23T07:09:07+00:00",
+  "library_versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  },
+  "dataset": {
+    "rows": 7043,
+    "churn_rate": 0.2653698707936959,
+    "train_rows": 5634,
+    "test_rows": 1409
+  },
+  "selected_model": "Logistic Regression",
+  "selected_params": {
+    "C": 10.0
+  },
+  "model_comparison": [
+    {
+      "model": "Random Forest",
+      "best_params": {
+        "max_depth": 8,
+        "min_samples_leaf": 10
+      },
+      "cv_roc_auc_mean": 0.8477955099442107,
+      "cv_roc_auc_std": 0.010197651013031704,
+      "cv_average_precision_mean": 0.6657185320686546,
+      "cv_f1_at_0.5_mean": 0.5615644998117825
+    },
+    {
+      "model": "Gradient Boosting",
+      "best_params": {
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 8
+      },
+      "cv_roc_auc_mean": 0.8474961679097038,
+      "cv_roc_auc_std": 0.01065014064042986,
+      "cv_average_precision_mean": 0.6627313774592636,
+      "cv_f1_at_0.5_mean": 0.5863467013580801
+    },
+    {
+      "model": "Logistic Regression",
+      "best_params": {
+        "C": 10.0
+      },
+      "cv_roc_auc_mean": 0.8459341169808777,
+      "cv_roc_auc_std": 0.01175981567892332,
+      "cv_average_precision_mean": 0.6629091561460727,
+      "cv_f1_at_0.5_mean": 0.591359349227221
+    }
+  ],
+  "threshold": 0.35,
+  "economic_assumptions": {
+    "customer_value": 500.0,
+    "offer_cost": 50.0,
+    "offer_success_rate": 0.3,
+    "note": "Illustrative assumptions used only to choose the threshold."
+  },
+  "test_metrics_at_selected_threshold": {
+    "threshold": 0.35,
+    "accuracy": 0.7735982966643009,
+    "precision": 0.5571725571725572,
+    "recall": 0.7165775401069518,
+    "f1": 0.6269005847953216,
+    "roc_auc": 0.841768064274458,
+    "average_precision": 0.6348167719228958,
+    "brier_score": 0.13783345692085205,
+    "contacted_share": 0.34137686302342085,
+    "net_benefit_per_customer": 11.462029808374734
+  },
+  "test_metrics_at_0.5": {
+    "threshold": 0.5,
+    "accuracy": 0.7963094393186657,
+    "precision": 0.6435643564356436,
+    "recall": 0.5213903743315508,
+    "f1": 0.5760709010339734,
+    "roc_auc": 0.841768064274458,
+    "average_precision": 0.6348167719228958,
+    "brier_score": 0.13783345692085205,
+    "contacted_share": 0.2150461320085167,
+    "net_benefit_per_customer": 10.00709723207949
+  },
+  "baseline_majority_class_accuracy": 0.7345635202271115,
+  "top_features_permutation": [
+    {
+      "feature": "tenure",
+      "importance": 0.2181,
+      "std": 0.0034
+    },
+    {
+      "feature": "InternetService",
+      "importance": 0.2114,
+      "std": 0.0157
+    },
+    {
+      "feature": "MonthlyCharges",
+      "importance": 0.1062,
+      "std": 0.0101
+    },
+    {
+      "feature": "Contract",
+      "importance": 0.0394,
+      "std": 0.0044
+    },
+    {
+      "feature": "TotalCharges",
+      "importance": 0.0321,
+      "std": 0.0033
+    },
+    {
+      "feature": "StreamingMovies",
+      "importance": 0.0112,
+      "std": 0.003
+    },
+    {
+      "feature": "StreamingTV",
+      "importance": 0.011,
+      "std": 0.0038
+    },
+    {
+      "feature": "MultipleLines",
+      "importance": 0.0065,
+      "std": 0.0022
+    },
+    {
+      "feature": "PaymentMethod",
+      "importance": 0.0025,
+      "std": 0.0013
+    },
+    {
+      "feature": "PaperlessBilling",
+      "importance": 0.0022,
+      "std": 0.0016
+    }
+  ]
+}

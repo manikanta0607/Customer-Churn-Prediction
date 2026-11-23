@@ -1,0 +1,10 @@
+# Exact versions this project was developed and tested with (Python 3.12).
+# The saved model (models/churn_model.joblib) is tied to this scikit-learn version;
+# if you change versions, retrain with: python scripts/train.py
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+plotly==7.1.0
+streamlit==1.67.0
